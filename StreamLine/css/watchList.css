@@ -1,0 +1,89 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.holder{
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 7%;
+    float: left;
+}
+
+.movie-img-con{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+.error-img{
+    width: 100%;
+    height: 70%;
+    margin-top: 20%;
+    margin-left: 22%;
+    background-image: url(../img/unavailable.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.bio{
+    width: 55%;
+    height: 30%;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-top: 4%;
+    float: left;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    min-height: 32px;
+    margin-right: 1%;
+    margin-top: 2%;
+    float: right
+}
+
+.button {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 140px;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #de787c 20%, #891179 51%);
+    height: 25px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 3px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+.button:hover {
+    background-position: right center; /* change the direction of the change here */
+}
+
+.watch-btn{
+    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+}
+
+.remove-btn{
+    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+}
