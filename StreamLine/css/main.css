@@ -94,7 +94,7 @@
 
 .footer-container{
     width:100%;
-    min-height:250px;
+    min-height:190px;
     background-color: #02020e;
     color: white;
 }
@@ -118,10 +118,7 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-left: 50px;
-    
 }
-
-
 
 .icons{
     padding-left: 20px;
@@ -145,5 +142,3 @@
 .fa:hover {
     color: #891179;
 }
-
-
