@@ -1,4 +1,4 @@
-a{
+h1, h2, h3, h4, h5, h6, a{
     color: white;
     text-decoration: none;
 }
@@ -18,6 +18,20 @@ p{
     float: left;
 }
 
+.page-title{
+    width: 100%;
+    
+    margin-top: 5%;
+    float: left;
+    text-align: center;
+}
+
+.page-info{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
 .movie-img-con{
     width: 20%;
     height: 100%;
@@ -28,7 +42,7 @@ p{
 .error-img{
     width: 100%;
     height: 70%;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 22%;
     background-image: url(../img/unavailable.png);
     background-repeat: no-repeat;
@@ -60,9 +74,9 @@ p{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    width: 140px;
+    width: 100px;
     border-radius: 35px;
-    background-image: linear-gradient(to right, #de787c 20%, #891179 51%);
+    background-color: #F56C35;
     height: 25px;
     text-align: center;
     font-size: 11px;
@@ -76,14 +90,53 @@ p{
     margin-right: 30px;
  }
 
-.button:hover {
-    background-position: right center; /* change the direction of the change here */
+ .button:hover {
+    opacity: 0.6; 
 }
 
-.watch-btn{
-    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+.button-container-tablit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
 }
 
-.remove-btn{
-    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+.watch-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.remove-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.button-container-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
+}
+
+.watch-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.remove-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.img{
+    width: 40%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
