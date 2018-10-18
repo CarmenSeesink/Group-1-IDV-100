@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6, a{
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p{
@@ -139,4 +140,39 @@ p{
     height: 90%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.button {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 140px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px !important;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+.button:hover {
+    opacity: 0.6; 
+}
+
+.button{
+    background-color: #F56C35;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px black;
+       -moz-box-shadow: 0 10px 6px -6px black;
+            box-shadow: 0 10px 6px -6px black;
 }

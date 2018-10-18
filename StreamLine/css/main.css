@@ -49,7 +49,7 @@
     display: inline;
     text-decoration: none; 
     list-style: none;
-    color: #891179;
+    color: #F56C35;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -97,6 +97,7 @@
     min-height:190px;
     background-color: #02020e;
     color: white;
+   
 }
 
 .footer-content{
@@ -128,10 +129,10 @@
 .fa {
     width: 50px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     margin: -10px;
     font-size: 1.4em;
-    color: #EF8354;
+    color: #F56C35;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -140,5 +141,5 @@
 }
 
 .fa:hover {
-    color: #891179;
+    opacity:0.6 !important;
 }

@@ -55,25 +55,7 @@ p{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-
-.next-right img{
-    width: 30px;
-    height: 35px;
-    float: right;
-    margin-top: 20%;
-    background-size: cover;
-    margin-right: 3%;
-}
-
-.next-left img{
-    width: 30px;
-    height: 35px;
-    float: left;
-    margin-top: 20%;
-    background-size: cover;
-    margin-left: 3%;
-}
-
+ 
 .movie-con {
     width: 30%;
     height: 500px;
@@ -81,6 +63,8 @@ p{
     float: left;
     margin-top: 28%;
     margin-left: 2%;
+    padding-left: 40px;
+    padding-right:40px;
     
 }
 
@@ -106,13 +90,13 @@ p{
     color: white;
     width: 140px;
     border-radius: 35px;
-    background-image: linear-gradient(to right, #de787c 20%, #891179 51%);
-    height: 25px;
+    background-color: #F56C35;
+    height: 40px;
     text-align: center;
-    font-size: 11px;
+    font-size: 11px !important;
     color: white;
     letter-spacing: 2px;
-    padding-top: 15px;
+    padding-top: 14px;
     font-weight: 900;
     margin-top: 30px;
     font-family: 'Montserrat';
@@ -121,14 +105,46 @@ p{
  }
 
 .button:hover {
-    background-position: right center; /* change the direction of the change here */
+    opacity: 0.6; 
 }
 
-.button-one {
-    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+.button{
+    background-color: #F56C35;
 }
 
-.button-two {
-    background-image: linear-gradient(to right, #de787c 0%, #891179 51%, #4c1472 100%);
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px black;
+       -moz-box-shadow: 0 10px 6px -6px black;
+            box-shadow: 0 10px 6px -6px black;
 }
 
+.footer-container{
+    width:100%;
+    min-height:190px;
+    background-color: #02020e;
+    color: white;
+    float: left;
+   
+}
+
+.footer-content{
+    margin: 0 auto;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+ 
+}
+
+.footer-logo{
+    width:90px;
+    padding: 20;
+}
+
+.footer-logo img{
+    width:80px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 50px;
+}
