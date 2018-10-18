@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        
+	    <!--meta-information-->
+        <meta name="Author" content="Group1">
+        <meta name="Subject" content="IDV104">
+        <meta name="Lecturer" content="Mike Maynard">
+        <meta name="Term 4" content="Streamline">
+        
+        <!--website-title-->
+        <title>Streamline</title>
+        
+        <!-- jQuery library files -->
+        <script src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+        <!--bootstrap-files-->
+        <link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/burger-menu.css">
+        <link rel="stylesheet" href="css/individual.css">
+
+        <!-- js -->
+        <script src="js/index.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/burger-menu.js"></script>
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--question-->
+        
+     </head>
+    
+     <body>
+         
+        <div class="home-container">
+            
+            <div id="mySidenav" class="sidenav col=xs=1">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="active" href="index.html">HOME</a>
+                <a href="libraryPage.html">MOVIES</a>
+                <a href="watchList.html">WATCHLIST</a>
+            </div>
+             
+            <span class="burger hidden-lg hidden-xl" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <div class="navigation-container hidden visible-lg col-lg-12">
+                <div class="logo-container">
+                    <img alt="Streamline Logo" src="img/Logo.png">
+                </div><!--logo-container-->
+             
+                <div class="navigation-item-container hidden-md hidden-xs">
+                    <ul class="navigation-buttons">
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="libraryPage.html"><li>MOVIES</li></a>
+                        <a href="watchList.html"><li>WATCHLIST</li></a>
+                    </ul> 
+                </div><!--navigation-item-container-->
+             
+                <div class="search-icn"></div>
+                <div class="profile"></div>
+             
+            </div><!--navigation-container-->
+             
+             
+            <div class="next-right"><img alt="nxt-right" src="img/next_right.png"></div>
+            <div class="next-left"><img alt="nxt-left" src="img/next_left.png"></div>
+            
+            <div class="movie-con">
+                
+            
+            </div><!--movie-con-->
+             
+            <div class="content">
+                <h1>Venom</h1>
+                <h4>2018</h4>
+                <h4>Genre: Action, Sci-Fi </h4>
+                <h4>Restriction: PG-13 </h4>
+                <h5>IMDb Rating</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                <h4>Duration: 1h 52min</h4>
+                <h4>Director:Ruben Fleischer </h4>
+                <h2>Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.</h2>
+                
+                <div class="button-container">  
+                    <a href="screenings.html"><div class="button button-one">TRAILER</div></a>
+                    <a href="contact.html"><div class="button button-two">ADD TO WATCHLIST</div></a>
+                    <a href="contact.html"><div class="button button-two">BACK</div></a>
+                </div><!--button-container-->
+                
+                <div class="trailer"> 
+                    
+                </div><!--trailer-->
+                
+            </div><!--content-->
+        </div><!--home-container-->
+         
+           
+        <div class="footer-container">
+            <div class="footer-content">
+             
+                <div class="footer-logo">
+                    <img alt="Streamline Logo" src="img/logo.png">
+                </div>
+            
+                <p>Follow us on</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+                    <a href="https://www.google.com/" class="fa fa-google"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    
+                </div>
+            </div>
+        </div><!--footer-container-->
+         
+         
+         
+    </body>
+    
+</html>
