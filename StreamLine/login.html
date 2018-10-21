@@ -21,8 +21,7 @@
         
         <!-- css -->
         <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/burger-menu.css">
+
 
         <!-- js -->
         <script src="js/login.js"></script>
@@ -37,8 +36,48 @@
      </head>
 
      <body>
+         
+         <div class="login-container">
+             
+             <div class="Main-image hidden-sm hidden-xs">
+                 <div class="image"></div>
+             </div><!--Main-image-->
+             
+             <div class="login-form">
+                    
+             <div class="big-logo col-lg-1"></div>
+             
+                 
+              <form action="/action_page.php" class="container">
+                <h1>Login</h1>
 
-        
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="login-btn effect1">Login</button>
+                <button type="submit" class="signup-btn effect1">Sign Up</button>
+                  
+              </form>
+                 
+            
+                <div class="social-login">
+                    <h2>Login with:</h2> 
+                <div class="icons">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+                    
+                        </div><!--icons-->
+                 </div><!--social-login-->
+                 
+            </div><!--login-form-->
+             
+         </div><!--Login-container-->
+
+
      </body>
 
 </html>
+
