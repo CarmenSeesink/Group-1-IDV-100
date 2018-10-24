@@ -104,7 +104,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .login-form{
     width: 40%;
-    height: 700px;
+    height: 750px;
     background-color: #02020e;
     float: right;
     
@@ -112,7 +112,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .Main-image{
     width: 60%;
-    height: 700px;
+    height: 750px;
     background-color: #02020e;
     float: left;
 
@@ -121,7 +121,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .image{
     width: 90%;
-    height: 700px;
+    height: 750px;
     background:linear-gradient(to left, #02020e 0%, transparent), url(../img/loginbackground.png);
     background-position: center;
     background-repeat: no-repeat;
