@@ -153,3 +153,7 @@ p{
     float: left;
     
 }
+
+.item img{
+    width: 100% !important;
+}
