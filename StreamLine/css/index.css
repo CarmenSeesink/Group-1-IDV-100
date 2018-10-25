@@ -110,6 +110,23 @@ p{
     background-color: #e74c3c;
     min-width: 200px;
     margin: 5px;
+    width: 400px;
+    height: 400px;
+    float: left;
+    
+}
+
+.poster{
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+
+#movies-z{
+    width: 100%;
+    height: 80%;
+    float: left;
+    
 }
 
 .row2{
