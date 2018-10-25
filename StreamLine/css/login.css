@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Add styles to the form container */
+.container {
+    width: 90%;
+    height: 400px;
+    right: 0;
+    padding: 16px;
+    background-color: #02020e;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-right: 300px;
+}
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #101033;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #101033;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Set a style for the submit button */
+.login-btn {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 150px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 0px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.signup-btn {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 150px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 0px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-left: 10px;
+}
+
+.login-btn:hover {
+    opacity: 0.6; 
+}
+
+.signup-btn:hover {
+    opacity: 0.6; 
+}
+
+
+.h2, h2{
+
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    font-size: 20px;
+    color: white;
+}
+
+
+.login-form{
+    width: 40%;
+    height: 900px;
+    background-color: #02020e;
+    float: right;
+    
+}
+
+.Main-image{
+    width: 60%;
+    height: 900px;
+    background-color: #02020e;
+    float: left;
+
+    
+}
+
+.image{
+    width: 90%;
+    height: 900px;
+    background:linear-gradient(to left, #02020e 0%, transparent), url(../img/loginbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.big-logo{
+    width: 100%;
+    height: 200px;
+    background-color: #02020e;
+    background-image: url(../img/Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 0px;
+    
+}
+
+.big-logo:hover{
+    background-image: url(../img/Logo_hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px black;
+       -moz-box-shadow: 0 10px 6px -6px black;
+            box-shadow: 0 10px 6px -6px black;
+}
+
+.social-login{
+    width: 100%;
+    height: 100px;
+    background-color: #02020e;
+    margin-top: 80px;
+}
+
+.icons{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fa {
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: -10px;
+    font-size: 1.4em;
+    color: #EF8354;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.fa:hover {
+    color: #891179;
+}
+
+form {
+    margin:0 auto;
+    width:300px
+}
+input {
+    margin-bottom:3px;
+    padding:10px;
+    width: 100%;
+    border:1px solid #CCC
+}
+
+label {
+    cursor:pointer;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#form-switch {
+    display:none
+}
+#register-form {
+    display:none
+}
+#form-switch:checked~#register-form {
+    display:block
+}
+#form-switch:checked~#login-form {
+    display:none
+}
