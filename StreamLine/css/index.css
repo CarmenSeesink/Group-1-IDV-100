@@ -175,19 +175,21 @@ p{
 }
 
 .item{
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .carousel-caption{
     float: left;
-    background-color: yellow;
     text-align: left;
+    height: 60%;
+    margin-right: 15%;
+    margin: auto 0;
 }
 
 #justice{
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 35px;
 }
 
 #para{
@@ -196,8 +198,113 @@ p{
     font-size: 18px;
 }
 
+.btn{
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 100px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 25px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 3px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+ .btn:hover {
+    opacity: 0.6; 
+}
+
+.btn-container-tablit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
+}
+
+.home-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.remove-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.btn-container-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
+}
+
+.home-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.remove-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.btn{
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 140px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px !important;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 12px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+.btn:hover {
+    opacity: 0.6; 
+}
+
+.btn{
+    background-color: #F56C35;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px black;
+       -moz-box-shadow: 0 10px 6px -6px black;
+            box-shadow: 0 10px 6px -6px black;
+}
+
 .carousel-caption{
     float: left;
+}
+
+.overlayM:hover{
+    background-color: yellow;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
