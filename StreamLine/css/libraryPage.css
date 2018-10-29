@@ -44,8 +44,6 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .next-right img{
     width: 30px;
     height: 35px;
@@ -63,7 +61,6 @@ p{
     background-size: cover;
     margin-left: 3%;
 }
-
 
 .content{
     width: 40%;
@@ -442,123 +439,7 @@ h3{
     margin-left: 40px;
 }
 
-.row-1{
-    width:80%;
-    float: left;
-}
 
-.column-1{
-    width:20%;
-    float:left;
-   
-}
-
-.image-1{
-    background-image: url(../img/gl.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-
-.column-2{
-    width:20%;
-    float:left;   
-}
-
-.image-2{
-    background-image: url(../img/fc.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.column-3{
-    width:20%;
-    float:left;   
-}
-
-.image-3{
-    background-image: url(../img/sf.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.row-2{
-    margin-top: 40px;
-    width: 80%;
-    height: 370px;
-    float: left;
-}
-
-.column-4{
-    width:20%;
-    float:left;  
-}
-
-.image-4{
-    background-image: url(../img/39ad586313e7965649a1b382b93c0cce_XL.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.column-5{
-    width:20%;
-    float:left;   
-}
-
-.image-5{
-    background-image: url(../img/ly.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.column-6{
-    width:20%;
-    float:left;  
-}
-
-.image-6{
-    background-image: url(../img/lr.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.column-7{
-    width:20%;
-    float:left;  
-}
-
-.image-7{
-    background-image: url(../img/hunger-games-french.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
-
-.column-8{
-    width:20%;
-    float:left;  
-}
-
-.image-8{
-    background-image: url(../img/The_Equalizer_poster.jpg);
-    height: 300px;
-    width:200px;
-    background-size: cover;
-    margin: 0 auto;
-}
 
 
 

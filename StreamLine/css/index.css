@@ -35,7 +35,6 @@ p{
 
 .home-container{
     width: 100%;
-    height: 30%;
     font-family: 'Montserrat', sans-serif;
     float: left;
 }
@@ -94,9 +93,10 @@ p{
     background-color: yellow;
 }
 
+
+
 .row1{
-    height: 280px;
-    background-color: green;
+    height: 325px;
     float: left;
     display: flex;
     overflow-x: auto;
@@ -106,15 +106,8 @@ p{
     display: none;
 }
 
-.card--content{
-    background-color: #e74c3c;
-    min-width: 200px;
-    margin: 5px;
-}
-
 .row2{
-    height: 280px;
-    background-color: green;
+    height: 325px;
     float: left;
     display: flex;
     overflow-x: auto;
@@ -122,6 +115,58 @@ p{
 
 .row2::-webkit-scrollbar{
     display: none;
+}
+
+.card--content{ 
+    background-color: #e74c3c;
+    min-width: 200px;
+    padding: 0;
+    width: 100%;
+    height: 90%;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+}
+
+.poster{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.hover figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+    overflow: hidden;
+    float: left;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.poster :hover{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+#movie-z:hover{
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 .movie1{
@@ -157,3 +202,143 @@ p{
 .item img{
     width: 100% !important;
 }
+
+.item{
+    opacity: 0.8;
+}
+
+.carousel-caption{
+    float: left;
+    text-align: left;
+    height: 60%;
+    margin-right: 15%;
+    margin: auto 0;
+}
+
+#justice{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+#para{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.btn{
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 100px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 25px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 3px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+ .btn:hover {
+    opacity: 0.6; 
+}
+
+.btn-container-tablit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
+}
+
+.home-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.remove-btn-tablit{
+    width: 40%;
+    float: left;
+}
+
+.btn-container-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    min-height: 32px;
+    margin-left: 15%;
+    margin-top: 2%;
+    float: left;
+}
+
+.home-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.remove-btn-mobile{
+    width: 10%;
+    float: left;
+}
+
+.btn{
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 140px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px !important;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 12px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-right: 30px;
+ }
+
+.btn:hover {
+    opacity: 0.6; 
+}
+
+.btn{
+    background-color: #F56C35;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px black;
+       -moz-box-shadow: 0 10px 6px -6px black;
+            box-shadow: 0 10px 6px -6px black;
+}
+
+.carousel-caption{
+    float: left;
+}
+
+.overlayM:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
