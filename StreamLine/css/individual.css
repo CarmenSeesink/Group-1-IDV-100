@@ -50,18 +50,17 @@ p{
     width: 100%;
     height: 800px;
     position: top;
-    
     background-size: cover;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
  
 .movie-con {
-    width: 30%;
+    width: 70%;
     height: 500px;
     background-color: white;
     float: left;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 2%;
     padding-left: 40px;
     padding-right:40px;
@@ -70,8 +69,9 @@ p{
 
 .content{
     
-    width: 40%;
-    float: right;
+    width: 70%;
+    float: left;
+    padding-right: 10px;
     margin-top: 10%;
     margin-right: 2%;
 }
@@ -103,7 +103,7 @@ p{
     margin-top: 30px;
     font-family: 'Montserrat';
     float:left;
-    margin-right: 30px;
+    margin-right: 20px;
  }
 
 .button:hover {
@@ -168,4 +168,22 @@ p{
 .footer-container {
     float: left;
 }
+
+/* Updated CSS */
+
+.left-side{  
+    height: 100vh;
+    background-color: transparent;
+}
+
+.right-side{  
+    height: 100vh;
+    background-color: transparent;
+}
+
+.trailer-holder{
+    height: 500px;
+    background-color: green;
+}
+
 
