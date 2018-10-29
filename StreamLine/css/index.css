@@ -93,8 +93,6 @@ p{
     background-color: yellow;
 }
 
-
-
 .row1{
     height: 325px;
     float: left;
@@ -329,11 +327,6 @@ figure:hover+span {
 
 .carousel-caption{
     float: left;
-}
-
-.overlayM:hover{
-    background-color: yellow;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
