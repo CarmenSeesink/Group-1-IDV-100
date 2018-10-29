@@ -34,7 +34,7 @@ function getData(item, loop){
     
 
     $(function() {
-      $(".row1").append("<div class='card--content col-xs-3'><div class='poster'><img class='ccol-xs-3' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div></div>");
+      $(".row1").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div></div>");
 
       
     });
@@ -90,7 +90,7 @@ $(function () {
       
   
       $(function() {
-        $(".row2").append("<div class='card--content col-xs-3'><div class='poster'><img class='ccol-xs-3' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div></div>");
+        $(".row2").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div></div>");
   
         
       });
