@@ -94,7 +94,7 @@ p{
 }
 
 .row1{
-    height: 325px;
+    height: 400px;
     float: left;
     display: flex;
     overflow-x: auto;
@@ -105,7 +105,7 @@ p{
 }
 
 .row2{
-    height: 325px;
+    height: 400px;
     float: left;
     display: flex;
     overflow-x: auto;
@@ -116,7 +116,6 @@ p{
 }
 
 .card--content{ 
-    background-color: #e74c3c;
     min-width: 200px;
     padding: 0;
     width: 100%;
@@ -128,7 +127,7 @@ p{
 
 .poster{
     width: 100%;
-    height: 100%;
+    height: 80%;
     float: left;
 }
 
@@ -329,9 +328,71 @@ figure:hover+span {
     float: left;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+.play-icon{
+    width: 10px;
+    height:12px;
+    background-image: url(../img/play.png);
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 10px;
+    float: left;
 }
 
+.play {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 40px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: 'Montserrat';
+    float:left;
+ }
+
+.play:hover {
+    opacity: 0.6; 
+    cursor: pointer;
+}
+
+.plus {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 80px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top:20px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-left: 20px;
+ }
+
+.plus:hover {
+    opacity: 0.6; 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 100%) {
+    /* For mobile phones: */
+    [class*="col-12"] {
+        width: 100%;
+    }
+}

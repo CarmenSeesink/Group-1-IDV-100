@@ -32,7 +32,7 @@ function getData(item, loop){
     id = response.imdbID;
 
     $(function() {
-      $(".row1").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div></div>");
+      $(".row1").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
     });
   });
 }
@@ -79,7 +79,7 @@ $(function () {
       id = response.imdbID;
   
       $(function() {
-        $(".row2").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div></div>");
+        $(".row2").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
       });
     });
   }
