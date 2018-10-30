@@ -27,24 +27,19 @@
         <!-- js -->
         <script src="js/index.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/api.js"></script>
         <script src="js/burger-menu.js"></script>
+        <script src="js/libraryPage.js"></script>
+        <script src="js/api.js"></script>
 
         <!-- font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--question-->
         
      </head>
     
      <body>
-    
-
-        
-        <div class="overlay">
-        <div class="home-container">
-            
-            <div id="mySidenav" class="sidenav col-xs-1">
+         
+         <div id="mySidenav" class="sidenav col-xs-1">
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">HOME</a>
                 <a class="active" href="libraryPage.html">MOVIES</a>
@@ -68,107 +63,78 @@
              
              
             </div><!--navigation-container-->
-            </div><!--home-container-->
-        </div>
          
-         <div class="movie-content">
+     <div class="container-fluid">
+        <div class="overlay">
+        <div class="home-container">
             
-        
-        <h1>MOVIES</h1>
-                 <p>Use our filter to help you chose your movie<p>
+            
+            </div><!--home-container-->
+        </div><!--overlay-->
+         
+          <h1>MOVIES</h1>
+                 <p>Use our filter to help you choose your movie<p>
               
 
-
-            <div class="filter-box hidden-xs effect1">
-                <span class="custom-dropdown">
-                    <select>
-                        <option>Genre</option>
-                        <option>Romance</option>  
-                        <option>Action</option>
-                        <option>Animation</option>
-                        <option>Horror</option>
-                        <option>Comedy</option>
-                        <option>Drama</option>
-                        <option>Thriller</option>
-                    </select>
-                </span>
-                <span class="custom-dropdown">
-                    <select>
-                        <option>Language</option>
-                        <option>English</option>  
-                        <option>Chinese</option>
-                        <option>German</option>
-                        <option>Japanese</option>
-                        <option>Other</option>
-                    </select>
-                </span>
-                <span class="custom-dropdown">
-                    <select>
-                        <option>Language</option>
-                        <option>English</option>  
-                        <option>Chinese</option>
-                        <option>German</option>
-                        <option>Japanese</option>
-                        <option>Other</option>
-                    </select>
-                </span>
-
-                <h3>IDB Ratings</h3>
-                <div class="""slidecontainer">
-                    <input type="range" min="0" max="5" value="50" class="slider" id="myRange">
-                </div>
-                <h3>Release Year</h3>
-                <div class="""slidecontainer">
-                    <input type="range" min="0" max="5" value="50" class="slider" id="myRange">
-                </div><!--slider-container-->
-                <div class="button effect1">FILTER</div>
-            </div><!--filter-box-->
+         
+         <div class="top-bar visible-xs visible-sm col-xs-12">
              
-            <div class="filter-box2 hidden-lg hidden-xl hidden-md effect1">
+             <div class="filter-box2 effect1">
+                    <h2>FILTER:</h2>
+                 
                 <span class="custom-dropdown">
-                    <select>
+                    <select name="filter" id="filter">
                         <option>Genre</option>
-                        <option>Romance</option>  
-                        <option>Action</option>
-                        <option>Animation</option>
-                        <option>Horror</option>
-                        <option>Comedy</option>
-                        <option>Drama</option>
-                        <option>Thriller</option>
+                        <option data-category="digital" value="romance">Romance</option>  
+                        <option value="action">Action</option>
+                        <option value="animation">Animation</option>
+                        <option value="horror">Horror</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="thriller">Thriller</option>
                     </select>
                 </span>
                 <span class="custom-dropdown">
-                    <select>
+                   <select name="filter" id="filter">
                         <option>Language</option>
-                        <option>English</option>  
-                        <option>Chinese</option>
-                        <option>German</option>
-                        <option>Japanese</option>
-                        <option>Other</option>
+                        <option value="english">English</option>  
+                        <option value="chinese">Chinese</option>
+                        <option value="german">German</option>
+                        <option value="japanese">Japanese</option>
                     </select>
                 </span>
                 <span class="custom-dropdown">
-                    <select>
+                    <select name="filter" id="filter">
                         <option>Language</option>
                         <option>English</option>  
-                        <option>Chinese</option>
-                        <option>German</option>
+                        <option>French</option>
+                        <option>Xhosa</option>
                         <option>Japanese</option>
-                        <option>Other</option>
+                        <option>Spanish</option>
+                    </select>
+                </span>
+                    <span class="custom-dropdown">
+                    <select name="filter" id="filter">
+                        <option>IMDb Rating</option>
+                        <option value="one">1</option>  
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
                     </select>
                 </span>
                  <span class="custom-dropdown">
-                    <select>
-                        <option>Ratings</option>
-                        <option>1</option>  
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select name="filter" id="filter">
+                        <option>User rating</option>
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </span>
                  <span class="custom-dropdown">
-                    <select>
+                    <select name="filter" id="filter">
                         <option>Release Year</option>
                         <option>1980-1985</option>  
                         <option>1985-1990</option>
@@ -178,15 +144,96 @@
                         <option>2010-current</option>
                     </select>
                 </span>
-             
-             
              </div>
-             <div class="poster-container">
+         
+         
+         </div><!--top-bar-->
+         
+         <div class="sidebar hidden-xs hidden-sm col-md-3">
+             
+             <div class="filter-box effect1">
                  
+                  <h2>FILTER:</h2>
+                  
+                 <div id="all" type="submit" name="submit" class="button effect1">ALL</div><!--All-button-->
+                <span class="custom-dropdown">
+                   
+                    <select name="filter" id="filter">
+                        <option>Genre</option>
+                        <option value="romance">Romance</option>  
+                        <option value="action">Action</option>
+                        <option value="animation">Animation</option>
+                        <option value="horror">Horror</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+                </span>
+                <span class="custom-dropdown">
+                    <select name="filter" id="filter">
+                        <option>Language</option>
+                        <option value="english">English</option>  
+                        <option value="french">French</option>
+                        <option value="xhosa">Xhosa</option>
+                        <option value="japanese">Japanese</option>
+                         <option value="spanish">Spanish</option>
+                    </select>
+                </span>
+                <span class="custom-dropdown">
+                    <select>
+                        <option>User rating</option>
+                        <option value="1">1</option>  
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </span>
+
+                <h3>IDB Ratings</h3>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="5" value="50" class="slider" id="myRange">
+                </div>
+                <h3>Release Year</h3>
+                <div class="slidecontainer">
+                    <input type="range" min="1980" max="2018" value="50" class="slider" id="myRange">
+                </div><!--slider-container-->
+                <div id="filter-submit" type="submit" name="submit" class="button effect1">FILTER</div>
+            </div><!--filter-box-->
+         
+         
+         
+         </div><!--sidebar-->
+         
+         <div class="movie-area row col-xs-12 col-md-9">
+             
+        
+                
+                 
+                 
+                 
+                 
+                 
+<<<<<<< Updated upstream
              </div>
              
              
+=======
+                 
+>>>>>>> Stashed changes
                   
+                 
+                 
+
+                  
+      
+         </div><!--movie-area-->
+         
+         
+    
+        </div><!--container-->
+         
+         
         <div class="footer-container">
             <div class="footer-content">
              
@@ -201,13 +248,13 @@
                     <a href="https://www.google.com/" class="fa fa-google"></a>
                     <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                     
-                </div>
-            </div>
+                </div><!--footer-icons-->
+            </div><!--footer-content-->
         </div><!--footer-container-->
          
          
 
-  
+        
     </body>
     
 </html>
