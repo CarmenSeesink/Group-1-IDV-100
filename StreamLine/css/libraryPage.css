@@ -17,9 +17,9 @@ h1{
 h2{
     font-family: 'Montserrat', sans-serif;
     color:white;
-    font-size: 14px;
-    margin-top: -30px;
+    font-size: 18px;
     text-align: justify;
+    margin-top: 5px;
 }
 
 a{
@@ -36,7 +36,7 @@ p{
 
 .home-container{
     width: 100%;
-    height: 500px;
+    height: 230px;
     position: top;
     background: linear-gradient(to top, #02020e 0%, transparent),  url(../img/moviesbackground.png);
     background-size: cover;
@@ -87,7 +87,7 @@ p{
     margin-top: 30px;
     font-family: 'Montserrat';
     float:left;
-    margin-right: 30px;
+    margin-left: 10px;
  }
 
 .button:hover {
@@ -160,35 +160,35 @@ p{
     margin-top: 30px;
     font-family: 'Montserrat';
     float:left;
-    margin: 0auto;
+    margin-left:30px;;
  }
 
-.filter-box{
+.filter-box {
     width: 205px;
-    float: left;
-    margin-left: 30px;
-    height: 400px;
+    /* float: left; */
+    margin: 0 auto;
+    /* margin-left: 30px; */
+    height: 485px;
     background-color: #101033;
     color: grey;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
     padding: 20px;
-    
+    padding-top: 10px;
 }
 
-.filter-box2{
-    float: left;
-    width: 450px;
-    margin-left: 30px;
-    height: 180px;
+.filter-box2 {
+    /* float: left; */
+    width: 350px;
+    height: 200px;
     background-color: #101033;
     color: grey;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 30px;
+    margin-top: -10px;
     padding: 20px;
-    margin: 0auto;
-    
+    margin: 0 auto;
+    /* margin-left: 30px; */
 }
 
 .square {
@@ -202,7 +202,6 @@ p{
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px; 
   font-family: 'Montserrat', sans-serif !important;
   margin-top: 10px;
   margin-left: 10px;
@@ -212,6 +211,7 @@ p{
   background-color:#F56C35 ;
   color: #fff;
   font-size: inherit;
+  width: 135px;
   padding: .5em;
   padding-right: 2.5em; 
   border: 0;
@@ -371,6 +371,7 @@ h3{
     background-image: linear-gradient(to bottom, #02020e 0%, transparent), url(../img/footerbackground.png);
     color: white;
     float:left;
+    background-size: cover;
 }
 
 .footer-content{
@@ -434,12 +435,135 @@ h3{
 }
 
 .poster-container{
-    width: 80%;
-    float: left;
-    margin-left: 40px;
+ background-color: red;
 }
 
 
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-left: -30px;
+}
+
+.burger{
+  margin-left: 1%;
+    position: fixed;
+}
+
+.movie-holder{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #101033;
+    height: 545px;
+    border: solid 2px #101033;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.movie-holder h4,h5{
+    margin-left: 20px;
+}
+
+.movie-holder:hover{
+    border: solid 2px #F56C35;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.movie-area{
+    height: auto;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.movie-area .row{
+    margin-top: 0px; !important;
+}
+
+.movie-img{
+    width: 200px;
+    height: 310px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.play-icon{
+    width: 10px;
+    height:12px;
+    background-image: url(../img/play.png);
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.play {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 40px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: 'Montserrat';
+    float:left;
+ }
+
+.play:hover {
+    opacity: 0.6; 
+    cursor: pointer;
+}
+
+.plus {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 80px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top:20px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-left: 20px;
+ }
+
+.plus:hover {
+    opacity: 0.6; 
+    cursor: pointer;
+}
+
+#all{
+    margin-bottom: 10px;
+}
 
 
 

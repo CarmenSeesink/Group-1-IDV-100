@@ -1,5 +1,5 @@
 //Requested movies array
-var moviesArray = ["venom", "goosebumps+2", "first+man", "halloween", "johnny+English+Strikes+Again"];
+var moviesArray = ["venom", "widows", "first+man", "halloween", "johnny+English+Strikes+Again", "pearl+harbor", "gladiator", "the+nun", "longest+yard", "a+star+is+born", "the+nutcracker+and+the+four+realms", "smallfoot" , "the+lion+king", "the+notebook", "step+brothers", "invictus"];
 
 //Requested content from the array
 var movieTitle = '';
@@ -33,10 +33,8 @@ function getData(item, loop){
     id = response.imdbID;
     movieLanguage = response.Language;
 
-    
-
     $(function() { 
-      $(".poster-container").append("<div id=" + "con" + id + "><div class='movie-con' title=" + movieTitle + " genre=" + movieGenre + " rating=" + movieRating + " votes=" + mvoieVotes + " year=" + movieYear + " language=" + movieLanguage + " ><div class='poster'><div class='poster-overlay'><img src=" + movieImage + "></div></div></div></div>");
+      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder' title=" + movieTitle + " genre=" + movieGenre + " rating=" + movieRating + " votes=" + mvoieVotes + " year=" + movieYear + " language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
     });
 
   });
