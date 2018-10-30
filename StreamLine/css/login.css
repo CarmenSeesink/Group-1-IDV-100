@@ -238,3 +238,7 @@ label {
 .facebook:hover {
     opacity: 0.6; 
 }
+
+.problem{
+    float: left;
+}
