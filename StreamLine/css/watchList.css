@@ -13,15 +13,31 @@ p{
 
 .holder{
     width: 80%;
-    height: 200px;
+    height: auto;
     margin-left: 10%;
     margin-top: 7%;
+    margin-bottom: 2%;
     float: left;
 }
 
+.card--content{ 
+    background-color: #e74c3c;
+    min-width: 200px;
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+}
+
+.poster{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
 .page-title{
     width: 100%;
-    
     margin-top: 5%;
     float: left;
     text-align: center;
@@ -33,30 +49,27 @@ p{
     text-align: center;
 }
 
-.movie-img-con{
-    width: 20%;
-    height: 100%;
-    background-color: white;
-    float: left;
-}
-
-.error-img{
-    width: 100%;
-    height: 70%;
-    margin-top: 15%;
-    margin-left: 22%;
-    background-image: url(../img/unavailable.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: left;
-}
-
-.bio{
+.info{
     width: 55%;
     height: 30%;
     font-size: 14px;
-    margin-left: 5%;
-    margin-top: 4%;
+    
+    float: left;
+}
+
+#title{
+    width: 100%;
+    height: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+}
+
+#bio{
+    width: 100%;
+    height: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
     float: left;
 }
 
