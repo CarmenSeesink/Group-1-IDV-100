@@ -2,7 +2,7 @@ $(function() {
 
     console.log("Test Login")
     $("#problem").hide();
-
+    $("#sign-problem").hide();
     var libraryPage = "index.html"
     
     
@@ -42,5 +42,45 @@ $(function() {
         } 
     
     });
-    
+
+    //Sign Up
+
+    $(".signup-btn").on("click", function(){
+        event.preventDefault();
+       
+        var signupUser = document.getElementById("inputName").value
+        var signupEmail = document.getElementById("inputPassword").value
+        var signupPass = document.getElementById("inputName").value
+        var signupPassConfirm = document.getElementById("inputPassword").value   
+
+        if(signupUser == ""){
+            $("#sign-problem").show();
+            $("#sign-problem").text("Please make sure that your epic details is correct")
+            
+        }  
+            
+        if(signupEmail == ""){
+            $("#sign-problem").show();
+            $("#sign-problem").text("Please make sure that your epic details is correct")
+            
+        }  
+
+        if(signupPass == ""){
+            $("#sign-problem").show();
+            $("#sign-problem").text("Please make sure that your epic details is correct")
+           
+        } 
+
+        if(signupPassConfirm == ""){
+            $("#sign-problem").show();
+            $("#sign-problem").text("Please make sure that your epic details is correct")
+             
+        }
+
+        if(signupPass == signupPassConfirm){
+            $(location).attr('href', libraryPage);     
+        }
+
+    });
+
 });
