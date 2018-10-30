@@ -27,7 +27,7 @@
         <!-- js -->
         <script src="js/login.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/api.js"></script>
+       
 
         <!-- font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
@@ -50,37 +50,40 @@
          <div class="right-side col-lg-6 col-md-6 col-sm-12">
              <div class="login-form">
                     
-             <div class="big-logo"></div>
-             
-                 
-            <input type='checkbox' id='form-switch'>
-            <form id='login-form' action="" method='post'>
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <p id="problem" class="problem col-xs-6 alert alert-warning"></p>
+                <div class="big-logo"></div>
                 
-                <button class="login-btn" type='submit'>Login</button>
-                <label for='form-switch'><span>Sign Up</span></label>
+                    
+                <input type='checkbox' id='form-switch'>
+                <form id='login-form' action="" method='post'>
+                    <input id="inputName" type="text" placeholder="Username" >
+                    <input id="inputPassword" type="password" placeholder="Password" >
 
-                <label class="h2">Login with:</label>
-                <button class="twitter" src="img/Twitter.png"></button>
-                <button class="facebook" src="img/Facebook.png"></button>
-            </form>
+                    <p id="problem" class="problem col-xs-12 alert alert-warning"></p>
+                
+                    <button class="login-btn" type='submit'>Login</button>
+                    <label for='form-switch'><span>Sign Up</span></label>
 
-            <form id='register-form' action="" method='post'>
-              <input type="text" placeholder="Username" required>
-              <input type="text" placeholder="Email" required>
-              <input type="password" placeholder="Password" required>
-              <input type="password" placeholder="Confirm Password" required>
+                    <label class="h2">Login with:</label>
+                    <button class="twitter" src="img/Twitter.png"></button>
+                    <button class="facebook" src="img/Facebook.png"></button>
+                </form>
 
-              <button class="signup-btn" type='submit'>Sign Up</button>
+                
 
-              <label for='form-switch'>Already Member ? Sign In Now..</label>
-            </form>
-                 
-            
+                <form id='register-form' action="" method='post'>
+                    <input type="text" placeholder="Username" >
+                    <input type="text" placeholder="Email" >
+                    <input type="password" placeholder="Password" >
+                    <input type="password" placeholder="Confirm Password" >
 
-                 
+                    <button class="signup-btn" type='submit'>Sign Up</button>
+
+                    <label for='form-switch'>Already Member ? Sign In Now..</label>
+                </form>
+                    
+                
+
+                    
             </div><!--login-form-->
 
          </div><!--right-side-->

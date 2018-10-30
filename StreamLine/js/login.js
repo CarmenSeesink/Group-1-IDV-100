@@ -6,7 +6,7 @@ $(function() {
     var libraryPage = "index.html"
     
     
-    
+    //Login Page 
 
     $(".login-btn").on("click", function(){
         event.preventDefault();
@@ -40,7 +40,7 @@ $(function() {
                 
             }
         } 
-
     
     });
+    
 });
