@@ -7,6 +7,17 @@ body, html {
 }
 
 
+.left-side{
+    height: 900px;
+    background-color: red;
+    padding: 0px;
+}
+
+.right-side{
+    height: 900px;
+    background-color: blue;
+    padding: 0px;
+}
 
 /* Add styles to the form container */
 .container {
@@ -19,7 +30,6 @@ body, html {
     color: white;
     margin-right: 300px;
 }
-
 
 /* Full-width input fields */
   input[type=text], input[type=password] {
@@ -96,8 +106,7 @@ input[type=text]:focus, input[type=password]:focus {
 
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding-top: 60px;
     float: left;
     font-size: 20px;
     color: white;
@@ -105,15 +114,13 @@ input[type=text]:focus, input[type=password]:focus {
 
 
 .login-form{
-    width: 40%;
     height: 900px;
     background-color: #02020e;
-    float: right;
     
 }
 
 .Main-image{
-    width: 60%;
+    width: 100%;
     height: 900px;
     background-color: #02020e;
     float: left;
@@ -156,7 +163,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .social-login{
-    width: 100%;
+    width: 80%;
     height: 100px;
     background-color: #02020e;
     margin-top: 80px;
@@ -229,4 +236,12 @@ label {
 
 .facebook:hover {
     opacity: 0.6; 
+}
+
+.problem{
+    float: left;
+}
+
+.sign-problem{
+    float: left;
 }

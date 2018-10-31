@@ -23,12 +23,10 @@
         <!-- css -->
         <link rel="stylesheet" href="css/login.css">
 
-
         <!-- js -->
         <script src="js/login.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/api.js"></script>
-
+       
         <!-- font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 
@@ -38,79 +36,55 @@
 
      <body>
          
-         <div class="login-container">
-             
-             <div class="Main-image hidden-sm hidden-xs">
+         <div class="left-side col-lg-6 col-md-6 col-sm-3 hidden-sm hidden-xs">
+            <div class="Main-image">
                  <div class="image"></div>
                  
              </div><!--Main-image-->
-             
+
+         </div><!--left-side-->
+         
+         
+         <div class="right-side col-lg-6 col-md-6 col-sm-12">
              <div class="login-form">
                     
-             <div class="big-logo col-lg-1"></div>
-             
-                 
-            <input type='checkbox' id='form-switch'>
-            <form id='login-form' action="" method='post'>
-              <input type="text" placeholder="Username" required>
-              <input type="password" placeholder="Password" required>
-              <button class="login-btn" type='submit'>Login</button>
-              <label for='form-switch'><span>Sign Up</span></label>
-            </form>
-            <form id='register-form' action="" method='post'>
-              <input type="text" placeholder="Username" required>
-              <input type="text" placeholder="Email" required>
-              <input type="password" placeholder="Password" required>
-              <input type="password" placeholder="Confirm Password" required>
-              <button class="signup-btn" type='submit'>Sign Up</button>
-              <label for='form-switch'>Already Member ? Sign In Now..</label>
-            </form>
-                 
-            
-                <div class="social-login">
-                    <h2>Login with:</h2> 
-                <div class="icons">
-                    <div class="twitter"></div>
-                    <div class="facebook"></div>
+                <div class="big-logo"></div>
+                
                     
-                        </div><!--icons-->
-                 </div><!--social-login-->
-                 
+                <input type='checkbox' id='form-switch'>
+                <form id='login-form' action="" method='post'>
+                    <input id="inputName" type="text" placeholder="Username" >
+                    <input id="inputPassword" type="password" placeholder="Password" >
+
+                    <p id="problem" class="problem col-xs-12 alert alert-warning"></p>
+                
+                    <button class="login-btn" type='submit'>Login</button>
+                    <label for='form-switch'><span>Sign Up</span></label>
+
+                    <label class="h2">Login with:</label>
+                    <button class="twitter" src="img/Twitter.png"></button>
+                    <button class="facebook" src="img/Facebook.png"></button>
+                </form>
+
+                
+
+                <form id='register-form' action="" method='post'>
+                    <input id="signupUser" type="text" placeholder="Username" >
+                    <input id="signupEmail" type="text" placeholder="Email" >
+                    <input id="signupPass" type="password" placeholder="Password" >
+                    <input id="signupPassConfirm" type="password" placeholder="Confirm Password" >
+                    <p id="sign-problem" class="problem col-xs-12 alert alert-warning"></p>
+                    <button class="signup-btn" type='submit'>Sign Up</button>
+
+                    <label for='form-switch'>Already Member ? Sign In Now..</label>
+                </form>
+                
+                
+
+                    
             </div><!--login-form-->
-             
-             <div class="mobile hidden-lg hidden-md" >
-                 
-            <div class="big-logo col-lg-1"></div>
-             
-                 
-            <input type='checkbox' id='form-switch'>
-            <form id='login-form' action="" method='post'>
-              <input type="text" placeholder="Username" required>
-              <input type="password" placeholder="Password" required>
-              <button class="login-btn" type='submit'>Login</button>
-              <label for='form-switch'><span>Sign Up</span></label>
-            </form>
-            <form id='register-form' action="" method='post'>
-              <input type="text" placeholder="Username" required>
-              <input type="text" placeholder="Email" required>
-              <input type="password" placeholder="Password" required>
-              <input type="password" placeholder="Confirm Password" required>
-              <button class="signup-btn" type='submit'>Sign Up</button>
-              <label for='form-switch'>Already Member ? Sign In Now..</label>
-            </form>
-                 
-            
-                <div class="social-login">
-                    <h2>Login with:</h2> 
-                <div class="icons">
-                    <div class="twitter"></div>
-                    <div class="facebook"></div>
-                    
-                        </div><!--icons-->
-                 </div><!--social-login-->
-             </div>
-             
-         </div><!--Login-container-->
+
+         </div><!--right-side-->
 
 
      </body>

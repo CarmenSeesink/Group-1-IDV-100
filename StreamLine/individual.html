@@ -26,14 +26,13 @@
         <link rel="stylesheet" href="css/individual.css">
 
         <!-- js -->
-        <script src="js/index.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/api.js"></script>
         <script src="js/burger-menu.js"></script>
+        <script src="js/individualApi.js"></script>
+        <script src="js/api.js"></script>
 
         <!-- font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--question-->
         
      </head>
@@ -72,65 +71,42 @@
              
              <div class="row">
              
-                 <div class="left-side hidden-xs hidden-sm col-md-6">
-                    <div class="movie-con">
-            
-                    </div><!--movie-con-->
+                <div class="left-side hidden-xs hidden-sm col-md-6">
+                        <div class="movie-con">
+                            <!-- <div class='poster'>
+                                <img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'>
+                            </div> -->
+                        </div><!--movie-con-->
+                </div><!--left-side-->
 
 
-
-
-
-
-                 </div><!--left-side-->
-
-
-                 <div class="right-side col-xs-12 col-sm-12 col-md-6">
-                     
-                     <div class="content">
-                         <div class='movie-image-container'>
-                    
+                <div class="right-side col-xs-12 col-sm-12 col-md-6">
+                        
+                    <div class="content">
+                        <div class='movie-image-container' id="movie-image-con">
+                        
                             <img src="">
-                            <h4 id='movie-title'><strong></strong></h4>
-                            <h4 id=''><strong></strong></h4>
+                            
 
                         </div>
-                
-                        <h1>Venom</h1>
-                        <h4>2018</h4>
-                        <h4>Genre: Action, Sci-Fi </h4>
-                        <h4>Restriction: PG-13 </h4>
-                        <h5>IMDb Rating</h5>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        <h4>Duration: 1h 52min</h4>
-                        <h4>Director:Ruben Fleischer </h4>
-                        <h2>Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.</h2>
-
+                    
+                        <h1 id='movie-title'>Restriction: PG-13</h1>
+                        <h4>Genre:<h4 id='movie-genre'></h4></h4>
+                        <h4>IMDb Rating:<h4 id="movie-rating"></h4></h4>
+                        <h4>Year:<h4 id='movie-year'></h4></h4>
+                        <h4>Rating:<h4 id="movie-vote"></h4></h4>
+                        <h4>Plot:<h4 id='movie-plot'></h4></h4>
+                        
                         <div class="button-container">  
                             <a href="screenings.html"><div class="button button-one">TRAILER</div></a>
                             <a href="contact.html"><div class="button button-two">WATCHLIST</div></a>
                             <a href="contact.html"><div class="button button-two">BACK</div></a>
-                        </div><!--button-container-->
-                     
-                     
-                     </div><!--content-->
-
-                 </div><!--right-side-->
-         
-            </div><!--row-end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
              
-             <div class="row">
-                 <div class="kevin-spacer hidden-xs hidden-sm col-xs-2"></div>
-                 <div class="trailer-holder col-xs-12 col-sm-12 col-md-6">
-                 
-                 
-                 </div><!--trailer-holder-->
-                 <div class="kevin-spacer hidden-xs hidden-sm col-xs-2"></div>
-             </div><!--end-of-row-->
+             
              
              
          
@@ -160,7 +136,7 @@
          
          
          
-         
+          
          
          
     </body>

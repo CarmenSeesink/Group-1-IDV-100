@@ -24,7 +24,7 @@ function getData(item, loop){
     async: true
   }).done(function(response) {
 
-    console.log(response);
+    
     
     movieImage = response.Poster;
     movieTitle = response.Title;
@@ -33,6 +33,10 @@ function getData(item, loop){
 
     $(function() {
       $(".row1").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
+    });
+
+    $(".play").on("click", function () {
+      $('#watch-modal').modal('show');
     });
   });
 }
@@ -71,7 +75,7 @@ $(function () {
       async: true
     }).done(function(response) {
   
-      console.log(response);
+      
       
       movieImage = response.Poster;
       movieTitle = response.Title;
@@ -81,6 +85,15 @@ $(function () {
       $(function() {
         $(".row2").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
       });
+
+      $(".play").on("click", function () {
+        $('#watch-modal').modal('show');
+      });    
+
+      $(".plus").on("click", function () {
+        $('#added-modal').modal('show');
+      });  
+
     });
   }
   
@@ -89,6 +102,40 @@ $(function () {
     console.log(moviesArray[i]);
     getData(moviesArray[i], i)
   }
+  
+  
+
 });
   
 
+ // $(".card--content").on("click", function () {
+      //   var storage = +$(this).find(".poster").text();
+      //   console.log("test");
+      
+      //   console.log(storage);
+      
+      //   for(i = 0; i < moviesArray.length; i++){
+      //     if(imdbID === storage){
+      //       var movieTitle = response[i].Poster;
+      //       var movieImage = response[i].Title;
+      //       var movieGenre = response[i].Genre;
+      //       var imdbRating = response[i].imdbRating;
+      //       var movieYear = response[i].imdbVotes;
+      //       var movieRating = response[i].Year;
+      //       var moviePlot = response[i].Plot;
+      //       var movieLanguage = response[i].Language;
+      //       var id = imdbID;
+      
+      //       localStorage.setItem("movieTitle", movieTitle);
+      //       localStorage.setItem("movieImage", movieImage);
+      //       localStorage.setItem("movieGenre", movieGenre);
+      //       localStorage.setItem("imdbRating", imdbRating);
+      //       localStorage.setItem("movieYear", movieYear);
+      //       localStorage.setItem("movieRating", movieRating);
+      //       localStorage.setItem("moviePlot", moviePlot);
+      //       localStorage.setItem("movieLanguage", movieLanguage);
+      //       localStorage.setItem("id", id);
+      //     }
+      //   }
+      
+      // });

@@ -1,39 +1,54 @@
+    
+
 $(function(){
+    console.log("Individual Test")
+
+    var item =  localStorage.getItem("movieID");
     
-    var apiRequest = XMLHttpRequest();
-    apiRequest.open('GET', 'http://www.omdbapi.com/?i=tt3896198&apikey=5d0ce4f', true);
-    
-    apiRequest.onload = function (){
-        var data = JSON.parse(this.response);
+          
+       
+
+          
+
+
+    console.log(item);
+
+    $.ajax({
+        url: 'https://www.omdbapi.com/?i=' + encodeURI(item) + '&apikey=5d0c0e4f',
+        dataType: "json",
+        async: true
+      }).done(function(response) {
+
+        console.log(response);
         
-        function createContainers(movieCon,movieImage,trailer,movieDescription,movieTitle,movieYear,movieRating,age,genre,movieDuration,director){
-            $(".movie-content").append();
-            
-            for(i = 0; i < data.movies.length; i++){
-                movieCon = data.movies[i].movie.full_name;
-                movieImage = data.movies[i].movie_img;
-             trailer = data.movies[i].id;
-                movieDescription = data.movies[i].id;
-                movieTitle = data.movies[i].id;
-                movieRating = data.movies[i].id;
-                age = data.movies[i].id;
-               genre = data.movies[i].id;
-                movieDuration = data.movies[i].id;
-               director = data.movies[i].id;
-            }
-            
-            
-            $(".movie-content-container").on("click", function(){
-                var storageReference = +$(this).find("#movie-id").text();
-                console.log(storageReference);
-                
-                for(i = 0; i < data.movies.length; i++){
-                    
-            });
-            
-            
-        }
-    }
     
-    localStorage.
-});
+        movieImage = response.Poster;
+        console.log(movieImage);
+        
+        movieTitle = response.Title;
+        movieGenre = response.Genre;
+        movieRating = response.imdbRating;
+        mvoieVotes = response.imdbVotes;
+        movieYear = response.Year;
+        moviePlot = response.Plot;
+        movieLanguage = response.Language;
+        movieid = response.imdbID;
+    
+
+        
+        
+            $(".movie-con").append(" <div class='poster'><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div>");
+          
+    
+    $("#movie-title").text(movieTitle);
+    $("#movie-genre").text(movieGenre);
+    $("#movie-rating").text(movieRating);
+    $("#movie-year").text(movieYear);
+    $("#movie-vote").text(movieRating);
+    $("#movie-plot").text(moviePlot);
+    // $("#movie-language").text(movieLanguage);   
+
+      });
+      
+}); 
+
