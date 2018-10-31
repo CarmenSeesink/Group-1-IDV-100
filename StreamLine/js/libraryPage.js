@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
 
-=======
 $(function(){
     console.log("from Library js")
     
@@ -706,25 +704,3 @@ $(function(){
     
 });
    
-           
-
-    
-    
-   
-
-
-
-
-
-    
-    
-    
-    
-   
-    
-    
-    
-
-    
-    
->>>>>>> Stashed changes
