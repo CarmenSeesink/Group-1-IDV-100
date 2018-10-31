@@ -50,3 +50,18 @@ for (var i = 0; i < moviesArray.length; i++) {
   getData(moviesArray[i], i)
   
 }
+
+// var arr = [1, 2, 3, 4, 5];
+// var removeItem = 2;   
+ 
+// arr = $.grep(arr, function(value) {
+//   return value != removeItem;
+// });
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits;
+
+// function myFunction() {
+//     fruits.splice(2, 0, "Lemon", "Kiwi");
+//     document.getElementById("demo").innerHTML = fruits;
+// }
