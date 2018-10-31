@@ -20,7 +20,32 @@ $(function() {
                 
             }
             
-        }        
+        }   
+        
+        if(nameInput == "Mike"){
+            if(passwordInput == "rick"){
+                $(location).attr('href', libraryPage);
+                
+            }
+
+        } 
+        
+        if(nameInput == "Mike"){
+            if(passwordInput == "morty"){
+                $(location).attr('href', libraryPage);
+                
+            }
+            
+        } 
+        
+
+        if(nameInput == "Admin"){
+            if(passwordInput == "1234"){
+                $(location).attr('href', libraryPage);
+                
+            }
+            
+        } 
 
         if(nameInput == ""){
             $("#problem").show();
