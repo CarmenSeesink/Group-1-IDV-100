@@ -92,6 +92,33 @@ p{
 
 .button:hover {
     opacity: 0.6; 
+    cursor: pointer
+}
+
+.button1 {
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 140px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 14px;
+    font-weight: 900;
+    margin-top: 73px;
+    font-family: 'Montserrat';
+    float:left;
+    margin-left: 10px;
+ }
+
+.button1:hover {
+    opacity: 0.6; 
+    cursor: pointer
 }
 
 .button{
@@ -173,15 +200,15 @@ p{
     color: grey;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     font-family: 'Montserrat', sans-serif;
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 20px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .filter-box2 {
     /* float: left; */
     width: 350px;
-    height: 200px;
+    height: 300px;
     background-color: #101033;
     color: grey;
     font-family: 'Montserrat', sans-serif;
@@ -220,6 +247,7 @@ p{
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button;
+cursor: pointer;
 }
 
 .custom-dropdown::before,
@@ -308,7 +336,7 @@ h3{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
      -webkit-transition: all 1s ease;
@@ -434,11 +462,6 @@ h3{
             box-shadow: 0 10px 6px -6px black;
 }
 
-.poster-container{
- background-color: red;
-}
-
-
 
 .sidenav {
   height: 100%;
@@ -447,17 +470,45 @@ h3{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #101033;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   margin-left: -30px;
+  font-family: 'Montserrat';
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #F56C35;
+    cursor: pointer;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 70px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
 }
 
 .burger{
-  margin-left: 1%;
-    position: fixed;
+  margin-left: 2%;
 }
+
 
 .movie-holder{
     font-family: 'Montserrat', sans-serif;
@@ -466,6 +517,7 @@ h3{
     height: 545px;
     border: solid 2px #101033;
     margin-top: 10px;
+    margin-bottom: 10px;
     margin-bottom: 10px;
 }
 
