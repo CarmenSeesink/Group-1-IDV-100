@@ -3,30 +3,52 @@
 $(function(){
     console.log("Individual Test")
 
-    // var movieName =  localStorage.getItem("movieTitle");
-    // var moviePoster = localStorage.getItem("movieImage");
-    // var movieClass = localStorage.getItem("movieGenre");
-    // var imdbScore = localStorage.getItem("imdbRating");
-    // var moviereleased = localStorage.getItem("movieYear");
-    // var movieScore = localStorage.getItem("movieRating");
-    // var movieBio = localStorage.getItem("moviePlot");
-    // var movieToungh = localStorage.getItem("movieLanguage");
-    // var movieid = localStorage.getItem("movieid");
-
-    // $(".movie-image-container").attr('src', moviePoster);
-    // $("#movie-title").text(movieName);
-    // $("#movie-genre").text(movieClass);
-    // $("#movie-rating").text(imdbScore);
-    // $("#movie-year").text(moviereleased);
-    // $("#movie-rating").text(movieScore);
-    // $("#movie-plot").text(movieBio);
-    // $("#movie-language").text(movieToungh);   
-
-
-    var vOneLS = localStorage.getItem("vOneLocalStorage ");
-    var variableTwo = vOneLS;
-
-    console.log(variableTwo)
-    $("#movie-language").text(variableTwo);  
+    var item =  localStorage.getItem("movieID");
     
+          
+       
+
+          
+
+
+    console.log(item);
+
+    $.ajax({
+        url: 'https://www.omdbapi.com/?i=' + encodeURI(item) + '&apikey=5d0c0e4f',
+        dataType: "json",
+        async: true
+      }).done(function(response) {
+
+        console.log(response);
+        
+    
+        movieImage = response.Poster;
+        console.log(movieImage);
+        
+        movieTitle = response.Title;
+        movieGenre = response.Genre;
+        movieRating = response.imdbRating;
+        mvoieVotes = response.imdbVotes;
+        movieYear = response.Year;
+        moviePlot = response.Plot;
+        movieLanguage = response.Language;
+        movieid = response.imdbID;
+    
+
+        
+        
+            $(".movie-con").append(" <div class='poster'><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div>");
+          
+    
+    $("#movie-title").text(movieTitle);
+    $("#movie-genre").text(movieGenre);
+    $("#movie-rating").text(movieRating);
+    $("#movie-year").text(movieYear);
+    $("#movie-vote").text(movieRating);
+    $("#movie-plot").text(moviePlot);
+    // $("#movie-language").text(movieLanguage);   
+
+      });
+      
 }); 
+

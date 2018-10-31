@@ -21,13 +21,15 @@ h2{
     text-align: justify;
 }
 
-h3 {
+h3,h4 {
     float: left;
+    width: 40%;
     font-family: 'Montserrat', sans-serif;
     color:white;
-    font-size: 10px;
+    font-size: 20px;
     
 }
+
 
 .checked {
     color: black;

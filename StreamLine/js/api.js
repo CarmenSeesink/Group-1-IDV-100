@@ -16,6 +16,9 @@ $(".movieVideo").hide();
 var page = "individual.html"
 
 function getData(item, loop){
+console.log(loop);
+
+  
 
   $.ajax({
     url: 'https://www.omdbapi.com/?t=' + encodeURI(item, loop) + '&apikey=5d0c0e4f',
@@ -34,12 +37,11 @@ function getData(item, loop){
     movieid = response.imdbID;
     
 
-    $(function() { 
-      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder' id=" + movieid + " title=" + movieTitle + " genre=" + movieGenre + " rating=" + movieRating + " votes=" + mvoieVotes + " year=" + movieYear + " language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
+    $(function() {
+      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder'data-plot=" + moviePlot + " data-id=" + movieid + " data-title=" + movieTitle + " data-genre=" + movieGenre + " data-rating=" + movieRating + " data-votes=" + mvoieVotes + " data-year=" + movieYear + " data-language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
     });
 
-    var variableOne = "55555555555";  
-    localStorage.setItem("vOneLocalStorage", variableOne);
+    
 
     $(".play").on("click", function () {
       $('#watch-modal').modal('show');
@@ -49,9 +51,52 @@ function getData(item, loop){
       $('#added-modal').modal('show');
     });  
 
-  });
-  
 
+
+    $(".movie-holder").on("click", function () {
+      event.preventDefault();
+      var storage = $(this).attr("data-id");
+
+      
+
+      console.log(storage);    
+
+          var movieID = storage;
+          var movieTitle = $(this).attr("data-title");
+          var movieGenre = $(this).attr("data-genre");
+
+          var imdbRating = $(this).attr("data-rating");
+          var movieYear = $(this).attr("data-year");
+          var movieRating = $(this).attr("data-votes");
+          var moviePlot = $(this).attr("data-plot");
+              
+          localStorage.setItem("movieID", movieID);
+
+          localStorage.setItem("movieTitle", movieTitle);
+         
+          localStorage.setItem("movieGenre", movieGenre);
+          localStorage.setItem("imdbRating", imdbRating);
+          localStorage.setItem("movieYear", movieYear);
+          localStorage.setItem("movieRating", movieRating);
+          localStorage.setItem("moviePlot", moviePlot);
+          localStorage.setItem("movieLanguage", movieLanguage);
+          localStorage.setItem("id", id);
+
+    
+      var movieName =  localStorage.getItem("movieID");
+        console.log(movieName);
+      $(location).attr('href', page); 
+      
+    });
+
+    //  $(".movie-holder").on("click", function () {
+    //   var testter = $(this).attr("data-id");
+
+    //   console.log(testter)
+
+    // });
+    
+  });
 }
 
 for (var i = 0; i < moviesArray.length; i++) {  
@@ -61,43 +106,6 @@ for (var i = 0; i < moviesArray.length; i++) {
   
 }
 
-
-// $(".movie-holder").on("click", function () {
-    //   event.preventDefault();
-    //   var storage = +$(this).find(".id").text();
-      
-    
-    //   console.log(storage);
-       
-    //   for(i = 0; i < moviesArray.length; i++){
-    //     if(response.imdbID[i] === storage){
-
-    //       var movieTitle = response[i].Poster;
-    //       var movieImage = response[i].Title;
-    //       var movieGenre = response[i].Genre;
-    //       var imdbRating = response[i].imdbRating;
-    //       var movieYear = response[i].imdbVotes;
-    //       var movieRating = response[i].Year;
-    //       var moviePlot = response[i].Plot;
-    //       var movieLanguage = response[i].Language;
-    //       var movieid = response[i].imdbID;
-              
-    //       localStorage.setItem("movieImage", movieImage);
-    //       localStorage.setItem("movieTitle", movieTitle);
-    //       localStorage.setItem("movieGenre", movieGenre);
-    //       localStorage.setItem("imdbRating", imdbRating);
-    //       localStorage.setItem("movieYear", movieYear);
-    //       localStorage.setItem("movieRating", movieRating);
-    //       localStorage.setItem("moviePlot", moviePlot);
-    //       localStorage.setItem("movieLanguage", movieLanguage);
-    //       localStorage.setItem("movieid", movieid);
-          
-          
-          
-    //     }
-    //   }
-    //   $(location).attr('href', page); 
-    // });
 
 
 
