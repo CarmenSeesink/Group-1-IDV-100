@@ -36,7 +36,7 @@ function getData(item, loop){
     
 
     $(function() { 
-      $(".holder").append(" <div class='card--content col-xs-3 hover'><div class='poster'><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div><div class='bio col-xs-4'><P id='title'> Title" + movieTitle + "</P><P id='bio'>" + moviePlot + "</P></div><div class='button-container hiddin visible-lg visible-md col-xs-4'><div class='watch-btn button effect1'>WATCH</div><div class='remove-btn-tablit button effect1'>REMOVE</div></div><div class='button-container-tablit hidden visible-sm hidden-xs col-xs-4'><div class='watch-btn-tablit button effect1 col-xs-3'>WATCH</div><div class='remove-btn-tablit button effect1 col-xs-3'>REMOVE</div></div></div>");
+      $(".holder").append(" <div class='card--content col-xs-3 hover'><div class='poster'><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></div><div class='bio col-xs-4'><P id='title'> Title" + movieTitle + "</P><P id='bio'>" + moviePlot + "</P></div><div class='button-container hiddin visible-lg visible-md col-xs-4'><div class='watch-btn button effect1' data-target='#myModal'>>WATCH</div><div class='remove-btn-tablit button effect1'>REMOVE</div></div><div class='button-container-tablit hidden visible-sm hidden-xs col-xs-4'><div class='watch-btn-tablit button effect1 col-xs-3'>WATCH</div><div class='remove-btn-tablit button effect1 col-xs-3'>REMOVE</div></div></div>");
     });
 
   });

@@ -34,6 +34,10 @@ function getData(item, loop){
     $(function() {
       $(".row1").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
     });
+
+    $(".play").on("click", function () {
+      $('#watch-modal').modal('show');
+    });
   });
 }
 
@@ -82,7 +86,25 @@ $(function () {
         $(".row2").append("<div class='card--content col-xs-3 hover'><div class='poster'><figure><img class='col-xl-1' id='movie-z' src=" + movieImage + " height='100%' width='100%'></figure></div><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div>");
       });
 
-      // $(".card--content").on("click", function () {
+      $(".play").on("click", function () {
+        $('#watch-modal').modal('show');
+      });    
+
+    });
+  }
+  
+  for (var i = 0; i < moviesArray.length; i++) {  
+    
+    console.log(moviesArray[i]);
+    getData(moviesArray[i], i)
+  }
+  
+  
+
+});
+  
+
+ // $(".card--content").on("click", function () {
       //   var storage = +$(this).find(".poster").text();
       //   console.log("test");
       
@@ -113,18 +135,3 @@ $(function () {
       //   }
       
       // });
-
-    });
-  }
-  
-  for (var i = 0; i < moviesArray.length; i++) {  
-    
-    console.log(moviesArray[i]);
-    getData(moviesArray[i], i)
-  }
-  
-  
-
-});
-  
-

@@ -38,15 +38,27 @@ function getData(item, loop){
       $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder' id=" + movieid + " title=" + movieTitle + " genre=" + movieGenre + " rating=" + movieRating + " votes=" + mvoieVotes + " year=" + movieYear + " language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
     });
 
-
-    $(".play").on("click", function () {
-      $(".movieVideo").show();
-    });
-
     var variableOne = "55555555555";  
     localStorage.setItem("vOneLocalStorage", variableOne);
 
-    // $(".movie-holder").on("click", function () {
+    $(".play").on("click", function () {
+      $('#watch-modal').modal('show');
+    });
+
+  });
+  
+
+}
+
+for (var i = 0; i < moviesArray.length; i++) {  
+  
+  console.log(moviesArray[i]);
+  getData(moviesArray[i], i)
+  
+}
+
+
+// $(".movie-holder").on("click", function () {
     //   event.preventDefault();
     //   var storage = +$(this).find(".id").text();
       
@@ -83,20 +95,14 @@ function getData(item, loop){
     //   $(location).attr('href', page); 
     // });
 
-    
 
 
-  });
-  
 
-}
 
-for (var i = 0; i < moviesArray.length; i++) {  
-  
-  console.log(moviesArray[i]);
-  getData(moviesArray[i], i)
-  
-}
+
+
+
+
 
 // $(".movie-holder").on("click", function () {
 //   var storage = +$(this).find(".poster").text();

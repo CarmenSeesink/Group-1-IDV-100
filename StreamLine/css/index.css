@@ -397,3 +397,38 @@ figure:hover+span {
         width: 100%;
     }
 }
+
+.close-btn{
+    flex: 1 1 auto;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    width: 150px;
+    border-radius: 35px;
+    background-color: #F56C35;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 0px;
+    font-weight: 900;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    float: right;;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.modal-content{
+    background-color: #101033;
+    color: grey;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.close{
+    color: white;
+    background-color: white;
+    width: 2%;
+    height: 2%;
+}
