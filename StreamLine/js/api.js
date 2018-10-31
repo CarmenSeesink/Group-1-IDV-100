@@ -45,6 +45,10 @@ function getData(item, loop){
       $('#watch-modal').modal('show');
     });
 
+    $(".plus").on("click", function () {
+      $('#added-modal').modal('show');
+    });  
+
   });
   
 
