@@ -192,10 +192,7 @@ figure:hover+span {
     margin-top: 5%;
 }
 
-.slider-row{
-    float: left;
-    
-}
+
 
 .item img{
     width: 100% !important;
@@ -390,6 +387,17 @@ figure:hover+span {
     opacity: 0.6; 
     cursor: pointer;
 }
+
+.mobile-header{
+    height: 80px;
+    text-align: center;
+    background-image: url("img/header-m.png");
+}
+
+#streamline-t{
+    font-family: 'Montserrat';
+    font-size: 35px;
+
 
 @media only screen and (max-width: 100%) {
     /* For mobile phones: */

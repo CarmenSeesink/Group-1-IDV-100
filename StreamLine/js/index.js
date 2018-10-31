@@ -3,7 +3,7 @@
 $(function () { 
  
 //Requested movies array
-var moviesArray = ["venom", "goosebumps+2", "first+man", "halloween", "johnny+English+Strikes+Again", "Hunter+Killer", "Suspiria"];
+var moviesArray = ["venom", "goosebumps+2", "first+man", "halloween", "johnny+English+Strikes+Again", "Hunter+Killer", "Suspiria", "sex+and+the+city", "another+cinderella+story", "magic+mike",];
 
 //Requested content from the array
 var movieTitle = '';
@@ -50,7 +50,7 @@ for (var i = 0; i < moviesArray.length; i++) {
 $(function () { 
  
   //Requested movies array
-  var moviesArray = ["The+Nutcracker+and+the+Four+Realms", "The+Grinch&y=2018", "Nobody's+Fool", "Ralph+Breaks+the+Internet", "robin+hood&y=2018", "Mortal+Engines", "Aquaman&y=2018", "Bumblebee"];
+  var moviesArray = ["The+Nutcracker+and+the+Four+Realms", "The+Grinch&y=2018", "Nobody's+Fool", "Ralph+Breaks+the+Internet", "robin+hood&y=2018", "Mortal+Engines", "Aquaman&y=2018", "Bumblebee", "high+school+musical", "17+again","the+great+gatsby",];
   
   //Requested content from the array
   var movieTitle = '';
