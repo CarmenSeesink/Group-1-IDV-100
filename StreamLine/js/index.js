@@ -104,7 +104,8 @@ $(function() {
         }
 
         if(signupPass == signupPassConfirm){
-            $(location).attr('href', libraryPage);     
+            $("#sign-problem").show();
+            $("#sign-problem").text("Really, I know we are good but we arent that good yet")    
         }
 
     });

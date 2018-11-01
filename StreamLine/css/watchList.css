@@ -310,3 +310,8 @@ p{
     width: 2%;
     height: 2%;
 }
+
+.home-container{
+    float: left;
+    background-color: 02020e;
+}

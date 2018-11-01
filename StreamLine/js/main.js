@@ -12,9 +12,11 @@ $(function() {
     });
         
     $(".logo-container").on("mouseleave",function(){
-    $(this).find("img").attr("src", "img/logo.png");
+    $(this).find("img").attr("src", "img/Logo.png");
     });
 
         
 });
+
+
 });

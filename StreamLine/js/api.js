@@ -38,7 +38,7 @@ console.log(loop);
     
 
     $(function() {
-      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder'data-plot=" + moviePlot + " data-id=" + movieid + " data-title=" + movieTitle + " data-genre=" + movieGenre + " data-rating=" + movieRating + " data-votes=" + mvoieVotes + " data-year=" + movieYear + " data-language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
+      $(".movie-area").append("<div class='hide-now col-xs-12 col-md-4 col-lg-3'><div class='movie-holder'data-plot=" + moviePlot + " data-id=" + movieid + " data-title=" + movieTitle + " data-genre=" + movieGenre + " data-rating=" + movieRating + " data-votes=" + mvoieVotes + " data-year=" + movieYear + " data-language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + " data-id=" + movieid + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
    });
 
     
@@ -46,7 +46,7 @@ console.log(loop);
     $(".play").on("click", function () {
       $('#watch-modal').modal('show');
 
-      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder' data-title=" + movieTitle + " data-genre=" + movieGenre + " data-rating=" + movieRating + " data-votes=" + mvoieVotes + " data-year=" + movieYear + " data-language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
+      $(".movie-area").append("<div class='col-xs-12 col-md-4 col-lg-3'><div class='movie-holder' data-id=" + movieid + " data-title=" + movieTitle + " data-genre=" + movieGenre + " data-rating=" + movieRating + " data-votes=" + mvoieVotes + " data-year=" + movieYear + " data-language=" + movieLanguage + "><img class='movie-img effect1' src=" + movieImage + "><h4>Title: " + movieTitle + "</h4><h5>Genre: " + movieGenre + "</h5><h5>Language: " +  movieLanguage + "</h5><h5>IMDb Rating: " +  movieRating + "</h5><div class='play'><div class='play-icon'></div></div><div class='plus'>ADD</div></div></div>");
 
     });
 
@@ -56,7 +56,7 @@ console.log(loop);
 
 
 
-    $(".movie-holder").on("click", function () {
+    $(".movie-img").on("click", function () {
       event.preventDefault();
       var storage = $(this).attr("data-id");
 
